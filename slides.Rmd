@@ -1,0 +1,287 @@
+---
+title: "Making Beautiful Reports that Communicate Effectively with pagedown and pagedreport"
+output:
+  xaringan::moon_reader:
+    css: ["style.css", "default"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+---
+
+
+
+```{r openMic, include = FALSE}
+# openMic::openMic()
+```
+
+```{r xaringan-animate-css, echo=FALSE}
+xaringanExtra::use_animate_css()
+```
+
+class: white-bg animated fadeIn fadeOut
+# A Quick Story
+
+---
+
+class: animated fadeIn fadeOut
+background-image: url("images/rmd-pdf.png")
+
+---
+
+background-image: url("images/rmd-pdf.png")
+class: white-bg animated fadeIn fadeOut
+
+## Recognize This?
+
+
+
+
+---
+
+class: white-bg animated fadeIn fadeOut
+## R Users Are Not Designers
+
+---
+
+
+background-image:url("https://media.giphy.com/media/AC1HrkBir3bGg/source.gif")
+background-size: cover
+class: animated fadeIn fadeOut text-bottom
+
+---
+
+background-image: url("https://media.giphy.com/media/7FheFbW0lzaFHMv1v8/source.gif")
+background-size: cover
+class: animated fadeIn fadeOut text-bottom
+## PDFs Run the World
+
+---
+
+background-image: url("https://www.workfront.com/sites/default/files/imported/400867961-11778.jpg")
+background-size: cover
+class: animated fadeIn fadeOut text-bottom
+## Yeah, I'm Gonna Need That in a PDF
+
+
+---
+
+class: white-bg animated fadeIn fadeOut
+## Three Options to Make Beautiful PDF Reports
+
+---
+
+
+class: white-bg animated fadeIn fadeOut
+background-image: url("images/rmd-pdf.png")
+## Option #1: Default PDF Format
+
+---
+
+
+class: white-bg animated fadeIn fadeOut
+background-image: url("images/rmd-pdf.png")
+### Please Don't
+
+---
+
+
+class: animated fadeIn fadeOut
+background-image: url("images/graphic-designer.jpg")
+
+---
+
+## Option #2: LaTeX
+
+---
+
+### LaTeX is a Nightmare
+
+
+---
+
+
+class: animated fadeIn fadeOut
+background-image: url("images/graphic-designer.jpg")
+## Option #3: Hire a Designer
+
+---
+
+class: animated fadeIn fadeOut text-bottom
+background-image: url("images/thinking.jpg")
+## Is There Another Option?
+
+
+---
+
+background-image: url("images/psc-sample.png")
+class: white-bg animated fadeIn fadeOut
+
+---
+
+background-image: url("images/rmd-pdf.png")
+class: white-bg animated fadeIn fadeOut
+# How Did I Get From Here ... 
+
+---
+
+background-image: url("images/psc-sample.png")
+class: white-bg animated fadeIn fadeOut
+## ... To Here?
+
+---
+
+## 170+ Reports
+
+---
+
+background-image: url("images/frustrated.jpg")
+class: white-bg animated fadeIn fadeOut text-bottom
+## Enough to Drive a Graphic Designer Crazy
+
+---
+
+background-image: url("images/parameterized-reporting-article.png")
+class: white-bg animated fadeIn fadeOut
+## R is Efficient ... 
+
+---
+
+background-image: url("images/beautiful-lake.jpg")
+class: animated fadeIn fadeOut
+## ... But Can it Be Beautiful?
+
+
+
+
+---
+
+background-image: url("images/pagedown-resume.png")
+class: white-bg animated fadeIn fadeOut
+# Enter `pagedown`
+
+---
+
+background-image: url("images/psc-sample.png")
+class: white-bg animated fadeIn fadeOut
+## Connecticut Housing Reports
+
+---
+
+## Walk Through How it Was Made
+
+---
+
+background-image: url("images/psc-code.png")
+class: white-bg animated fadeIn fadeOut
+## It's Complicated
+
+
+
+---
+
+background-image: url("images/class.jpg")
+class: animated fadeIn fadeOut
+## I Tried Teaching Others
+
+---
+
+background-image: url("images/confused.jpg")
+class: animated fadeIn fadeOut text-bottom
+## It Didn't Go Well
+
+---
+
+class: animated fadeIn fadeOut white-bg
+## Can We Make Something Beautiful and Easy to Use? 
+
+---
+
+class: white-bg animated fadeIn fadeOut
+# Enter `pagedreport`
+
+---
+
+class: white-bg animated fadeIn fadeOut
+## Windmill
+
+.right[
+![](https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2021/01/windmill.gif)
+]
+
+---
+
+class: white-bg animated fadeIn fadeOut
+## Grid
+
+.right[
+![](https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2021/01/grid.gif)
+]
+
+---
+
+class: white-bg animated fadeIn fadeOut
+## Hazelnuts
+
+.right[
+![](https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2021/01/hazelnuts.gif)
+]
+
+
+---
+
+## It's YAML All the Way Down
+
+---
+
+class: middle
+
+```
+---
+title: "Annual North"
+subtitle: "Christmas activity report"
+author: "Santa Claus"
+date: "December 2020"
+output:
+  pagedreport::paged_hazelnuts:
+    front_img: "https://images.pexels.com/photos/717988/pexels-photo-717988.jpeg"
+    back_img: "https://images.pexels.com/photos/3303615/pexels-photo-3303615.jpeg"
+    logo: "https://www.flaticon.com/svg/static/icons/svg/268/268225.svg"
+    img_to_dark: TRUE
+    logo_to_white: TRUE
+knit: pagedown::chrome_print
+toc-title: "Table of Contents"
+main-color: "#E40A2D"
+secondary-color: "#00873E"
+google-font: TRUE
+main-font: "Raleway"
+header-font: "Mountains of Christmas"
+---
+```
+
+---
+
+background-image: url("images/rmd-pdf.png")
+class: white-bg animated fadeIn fadeOut
+# Please, Don't Make Ugly PDFs
+
+---
+
+class: white-bg animated fadeIn fadeOut
+## Got HTML + CSS Skills and Want 100% Control?<br>Try `pagedown`
+
+---
+
+background-image: url("https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2021/01/windmill.gif")
+background-size: cover
+class: white-bg animated fadeIn fadeOut
+## Want Something Simple?<br>Try `pagedreport`
+
+
+
+
+
+
+

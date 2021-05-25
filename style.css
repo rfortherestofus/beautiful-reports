@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400,400i,700,700i');
+
+
+
+body { 
+  font-family: Inter, sans-serif; 
+  color: #404e6b;
+  
+}
+
+
+.inverse {
+     background-color: #6cabdd;
+     background-image: none;
+     text-shadow: none;
+}
+
+
+.title-slide h3 {
+  font-weight: 400;
+}
+
+.title-slide h1 {
+  font-size: 75px;
+}
+
+
+
+
+.remark-slide-content {
+  font-size: 25px;
+  line-height: 1.25;
+}
+
+.remark-slide-content h1, .remark-slide-content h2, .remark-slide-content h3 {font-size:75px}
+
+
+h1, h2, h3 {
+    background-color: #ffffff;
+    display: inline;
+    padding: 1px 10px;
+    top: 125px;
+    font-family: Inter;
+    font-weight: 800;
+    position: absolute;
+    transform: rotate(-1deg);
+}
+
+.white-bg h1, .white-bg h2, .white-bg h3 {
+    background-color: #404e6b;
+    color: white;
+}
+
+.text-bottom h1, .text-bottom h2, .text-bottom h3 {
+  top: 400px;
+}
+
+
+.remark-slide-content:after {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 35px;
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-image: url("images/rru-logo-white.svg"); */
+}
+
+.white-bg:after {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 35px;
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-image: url("images/rru-logo-blue.svg"); */
+}
+
+
+.remark-slide-number {
+  /* font-size: 80%; */
+  display: none;
+}
