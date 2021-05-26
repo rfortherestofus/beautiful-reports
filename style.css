@@ -15,13 +15,20 @@ body {
      text-shadow: none;
 }
 
-
-.title-slide h3 {
-  font-weight: 400;
+.title-slide {
+  background-image: url("images/psc-sample.png"); 
+  background-position: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);
 }
 
 .title-slide h1 {
-  font-size: 75px;
+  background-color: transparent;
+  color: white;
+  line-height: 1.1;
+  top: 0;
+  position: relative;
+  transform: rotate(1deg);
+  
 }
 
 
@@ -44,7 +51,10 @@ h1, h2, h3 {
     font-weight: 800;
     position: absolute;
     transform: rotate(-1deg);
+    
 }
+
+
 
 .white-bg h1, .white-bg h2, .white-bg h3 {
     background-color: #404e6b;
@@ -53,6 +63,11 @@ h1, h2, h3 {
 
 .text-bottom h1, .text-bottom h2, .text-bottom h3 {
   top: 400px;
+}
+
+.right h2 {
+  top: 0;
+  position: relative;
 }
 
 

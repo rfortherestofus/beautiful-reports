@@ -6,6 +6,7 @@
     <script src="libs/header-attrs-2.8/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/animate.css-3.7.2/animate.xaringan.css" rel="stylesheet" />
+    <link href="libs/xaringanExtra-extra-styles-0.2.4/xaringanExtra-extra-styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
@@ -22,6 +23,14 @@ class: center, middle, inverse, title-slide
 
 
 
+
+
+```r
+xaringanExtra::use_extra_styles(
+* hover_code_line = TRUE,
+* mute_unhighlighted_code = TRUE
+)
+```
 
 class: white-bg animated fadeIn fadeOut
 # A Quick Story
@@ -55,9 +64,15 @@ class: animated fadeIn fadeOut text-bottom
 
 ---
 
-background-image: url("https://media.giphy.com/media/7FheFbW0lzaFHMv1v8/source.gif")
+background-image: url("images/who-runs-the-world.gif")
 background-size: cover
 class: animated fadeIn fadeOut text-bottom
+
+---
+
+background-image: url("images/who-runs-the-world.gif")
+background-size: cover
+class: animated fadeIn fadeOut
 ## PDFs Run the World
 
 ---
@@ -65,61 +80,78 @@ class: animated fadeIn fadeOut text-bottom
 background-image: url("https://www.workfront.com/sites/default/files/imported/400867961-11778.jpg")
 background-size: cover
 class: animated fadeIn fadeOut text-bottom
-## Yeah, I'm Gonna Need That in a PDF
+## Yeah, I'm Gonna&lt;br&gt;Need That in a PDF
 
 
 ---
 
-class: white-bg animated fadeIn fadeOut
-## Three Options to Make Beautiful PDF Reports
-
----
-
-
-class: white-bg animated fadeIn fadeOut
-background-image: url("images/rmd-pdf.png")
-## Option #1: Default PDF Format
+background-image: url("images/road-split.jpg")
+class: animated fadeIn fadeOut
+## Options to&lt;br&gt;Make PDF Reports
 
 ---
 
 
 class: white-bg animated fadeIn fadeOut
 background-image: url("images/rmd-pdf.png")
+## Option #1&lt;br&gt;Default PDF Format
+
+---
+
+
+class: white-bg animated fadeIn fadeOut
 ### Please Don't
 
 ---
 
+class: animated fadeIn fadeOut white-bg
+## Option #2&lt;br&gt;LaTeX
+
+---
+
+class: animated fadeIn fadeOut
+background-image: url("images/latex-sucks-1.png")
+
+---
+
+class: animated fadeIn fadeOut
+background-image: url("images/latex-sucks-2.png")
+
+---
+
+class: animated fadeIn fadeOut
+background-image: url("images/latex-sucks-3.png")
+
+---
+
+class: animated fadeIn fadeOut
+background-image: url("images/latex-sucks-4.png")
+
+---
+
+class: animated fadeIn fadeOut
+background-image: url("images/latex-sucks-5.png")
+
+
+
+---
+
 
 class: animated fadeIn fadeOut
 background-image: url("images/graphic-designer.jpg")
+## Option #3&lt;br&gt;Hire a Designer
 
 ---
 
-## Option #2: LaTeX
-
----
-
-### LaTeX is a Nightmare
-
-
----
-
-
-class: animated fadeIn fadeOut
-background-image: url("images/graphic-designer.jpg")
-## Option #3: Hire a Designer
-
----
-
-class: animated fadeIn fadeOut text-bottom
+class: animated fadeIn fadeOut right
 background-image: url("images/thinking.jpg")
-## Is There Another Option?
+## Is There&lt;br&gt;Another Option?
 
 
 ---
 
-background-image: url("images/psc-sample.png")
 class: white-bg animated fadeIn fadeOut
+# Yes!
 
 ---
 
@@ -135,13 +167,18 @@ class: white-bg animated fadeIn fadeOut
 
 ---
 
-## 170+ Reports
+background-image: url("images/ct-towns.gif")
+background-size: cover
+class: animated fadeIn fadeOut
+## Client Needs 170+ Reports
+
+
 
 ---
 
 background-image: url("images/frustrated.jpg")
 class: white-bg animated fadeIn fadeOut text-bottom
-## Enough to Drive a Graphic Designer Crazy
+## Enough to Drive You Crazy&lt;br&gt;if You Do it By Hand
 
 ---
 
@@ -152,7 +189,7 @@ class: white-bg animated fadeIn fadeOut
 ---
 
 background-image: url("images/beautiful-lake.jpg")
-class: animated fadeIn fadeOut
+class: animated fadeIn fadeOut text-bottom
 ## ... But Can it Be Beautiful?
 
 
@@ -168,11 +205,39 @@ class: white-bg animated fadeIn fadeOut
 
 background-image: url("images/psc-sample.png")
 class: white-bg animated fadeIn fadeOut
-## Connecticut Housing Reports
+## Connecticut&lt;br&gt;Housing Reports
 
 ---
 
-## Walk Through How it Was Made
+class: white-bg animated fadeIn fadeOut
+## R Code for the Plots
+
+---
+
+background-image: url("images/plot-code.png")
+background-size: cover
+class: white-bg animated fadeIn fadeOut
+
+
+
+---
+
+class: white-bg animated fadeIn fadeOut middle
+
+## HTML and CSS&lt;br&gt;for the Layout
+
+---
+
+background-image: url("images/layout-code.png")
+background-size: contain
+class: white-bg animated fadeIn fadeOut
+
+---
+
+background-image: url("images/psc-layout-sample.png")
+background-size: contain
+class: white-bg animated fadeIn fadeOut
+
 
 ---
 
@@ -185,19 +250,26 @@ class: white-bg animated fadeIn fadeOut
 ---
 
 background-image: url("images/class.jpg")
-class: animated fadeIn fadeOut
+class: animated fadeIn fadeOut text-bottom
 ## I Tried Teaching Others
 
 ---
 
 background-image: url("images/confused.jpg")
-class: animated fadeIn fadeOut text-bottom
-## It Didn't Go Well
+class: animated fadeIn fadeOut text-bottom right
+## It Didn't&lt;br&gt;Go Well
 
 ---
 
-class: animated fadeIn fadeOut white-bg
-## Can We Make Something Beautiful and Easy to Use? 
+background-image: url("images/beautiful-lake.jpg")
+class: animated fadeIn fadeOut text-bottom
+## Can We Make&lt;br&gt;Something Beautiful ...
+
+---
+
+background-image: url("images/easy-to-use.jpg")
+class: animated fadeIn fadeOut text-bottom
+## ... and Easy to Use? 
 
 ---
 
@@ -234,13 +306,17 @@ class: white-bg animated fadeIn fadeOut
 
 ---
 
+background-image: url("images/hole.jpg")
+class: animated fadeIn fadeOut text-bottom
 ## It's YAML All the Way Down
 
 ---
 
 class: middle
 
-```
+
+
+```yaml
 ---
 title: "Annual North"
 subtitle: "Christmas activity report"
@@ -250,7 +326,7 @@ output:
   pagedreport::paged_hazelnuts:
     front_img: "https://images.pexels.com/photos/717988/pexels-photo-717988.jpeg"
     back_img: "https://images.pexels.com/photos/3303615/pexels-photo-3303615.jpeg"
-    logo: "https://www.flaticon.com/svg/static/icons/svg/268/268225.svg"
+    logo: "https://www.flaticon.com/svg/static/icons/svg/268/268225.svg" 
     img_to_dark: TRUE
     logo_to_white: TRUE
 knit: pagedown::chrome_print
@@ -263,23 +339,26 @@ header-font: "Mountains of Christmas"
 ---
 ```
 
+
+
+
 ---
 
 background-image: url("images/rmd-pdf.png")
 class: white-bg animated fadeIn fadeOut
-# Please, Don't Make Ugly PDFs
+# Please,&lt;br&gt;Don't Make Ugly PDFs
 
 ---
 
 class: white-bg animated fadeIn fadeOut
-## Got HTML + CSS Skills and Want 100% Control?&lt;br&gt;Try `pagedown`
+## Got HTML + CSS Skills&lt;br&gt;and Want 100% Control?&lt;br&gt;Try `pagedown`
 
 ---
 
 background-image: url("https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2021/01/windmill.gif")
 background-size: cover
 class: white-bg animated fadeIn fadeOut
-## Want Something Simple?&lt;br&gt;Try `pagedreport`
+## Want A Simple Way&lt;br&gt;to Make Beautiful&lt;br&gt;PDF Reports?&lt;br&gt;Try `pagedreport`
 
 
 
