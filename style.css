@@ -70,6 +70,15 @@ h1, h2, h3 {
   position: relative;
 }
 
+p {
+  font-size: 40px;
+}
+
+a {
+  color: #6cabdd;
+  font-weight: 700;
+}
+
 
 .remark-slide-content:after {
     content: "";

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Making Beautiful Reports that Communicate Effectively with pagedown and pagedreport</title>
+    <title>Making Beautiful Reports that Communicate Effectively with pagedown and pagedreport TEST</title>
     <meta charset="utf-8" />
     <script src="libs/header-attrs-2.8/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
@@ -13,7 +13,7 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Making Beautiful Reports that Communicate Effectively with pagedown and pagedreport
+# Making Beautiful Reports that Communicate Effectively with pagedown and pagedreport TEST
 
 ---
 
@@ -25,12 +25,8 @@ class: center, middle, inverse, title-slide
 
 
 
-```r
-xaringanExtra::use_extra_styles(
-* hover_code_line = TRUE,
-* mute_unhighlighted_code = TRUE
-)
-```
+
+
 
 class: white-bg animated fadeIn fadeOut
 # A Quick Story
@@ -47,6 +43,7 @@ class: white-bg animated fadeIn fadeOut
 
 ## Recognize This?
 
+![](images/rmd-pdf.png)
 
 
 
@@ -139,7 +136,7 @@ background-image: url("images/latex-sucks-5.png")
 
 class: animated fadeIn fadeOut
 background-image: url("images/graphic-designer.jpg")
-## Option #3&lt;br&gt;Hire a Designer
+## Option #3&lt;br&gt;Work With a Designer
 
 ---
 
@@ -178,7 +175,7 @@ class: animated fadeIn fadeOut
 
 background-image: url("images/frustrated.jpg")
 class: white-bg animated fadeIn fadeOut text-bottom
-## Enough to Drive You Crazy&lt;br&gt;if You Do it By Hand
+## Enough to Drive You Crazy
 
 ---
 
@@ -228,22 +225,23 @@ class: white-bg animated fadeIn fadeOut middle
 
 ---
 
-background-image: url("images/layout-code.png")
+background-image: url("images/psc-layout-code.png")
 background-size: contain
 class: white-bg animated fadeIn fadeOut
+
 
 ---
 
 background-image: url("images/psc-layout-sample.png")
 background-size: contain
-class: white-bg animated fadeIn fadeOut
-
+class: white-bg animated fadeIn fadeOut text-bottom 
+## The Result
 
 ---
 
 background-image: url("images/psc-code.png")
 class: white-bg animated fadeIn fadeOut
-## It's Complicated
+## Here's the Thing:&lt;br&gt;It's Complicated
 
 
 
@@ -318,26 +316,37 @@ class: middle
 
 ```yaml
 ---
-title: "Annual North"
-subtitle: "Christmas activity report"
-author: "Santa Claus"
-date: "December 2020"
-output:
-  pagedreport::paged_hazelnuts:
-    front_img: "https://images.pexels.com/photos/717988/pexels-photo-717988.jpeg"
-    back_img: "https://images.pexels.com/photos/3303615/pexels-photo-3303615.jpeg"
-    logo: "https://www.flaticon.com/svg/static/icons/svg/268/268225.svg" 
-    img_to_dark: TRUE
+title: "Title of the report"
+subtitle: "Subtitle of the report"
+author: "Author Name"
+date: "Date"
+output: 
+  pagedreport::paged_windmill:
+    logo: "https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2020/08/rru-logo-blue.svg"
+    img_to_dark: FALSE
     logo_to_white: TRUE
 knit: pagedown::chrome_print
-toc-title: "Table of Contents"
-main-color: "#E40A2D"
-secondary-color: "#00873E"
-google-font: TRUE
-main-font: "Raleway"
-header-font: "Mountains of Christmas"
+main-color: "#6cabdd"
 ---
 ```
+
+???
+
+
+title: "Title of the report"
+subtitle: "Subtitle of the report"
+author: "Author Name"
+date: "Date"
+output: 
+  pagedreport::paged_windmill:
+    logo: "https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2020/08/rru-logo-blue.svg"
+    # logo: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg"
+    img_to_dark: FALSE
+    logo_to_white: FALSE
+knit: pagedown::chrome_print
+main-color: "#6cabdd"
+# main-color: "#e61a27"
+
 
 
 
@@ -362,10 +371,26 @@ class: white-bg animated fadeIn fadeOut
 
 
 
+---
+
+class: text-bottom white-bg animated fadeIn fadeOut
+
+# Learn More
+
+`pagedown`: [pagedown.rbind.io](pagedown.rbind.io)
+
+`pagedreport`: [pagedreport.rfortherestofus.com](pagedown.rbind.io)
+
+---
+
+class: white-bg animated fadeIn fadeOut middle text-bottom
+
+# david@rfortherestofus.com
 
 
-
-
+.right[
+![](images/dk-round.jpg)
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
