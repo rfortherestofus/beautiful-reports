@@ -1,5 +1,5 @@
 ---
-title: "Making Beautiful Reports that Communicate Effectively with pagedown and pagedreport TEST"
+title: "Making Beautiful Reports that Communicate Effectively with pagedown and pagedreport"
 output:
   xaringan::moon_reader:
     css: ["style.css", "default"]
