@@ -1,15 +1,18 @@
 ---
-title: "Title of the report"
-subtitle: "Subtitle of the report"
-author: "Author Name"
-date: "Date"
+title: "Sample Report"
+subtitle: "With an Amazing Subtitle"
+date: "June 5, 2021"
+author: "David Keyes"
 output: 
-  pagedreport::paged_windmill:
-    logo: "https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2020/08/rru-logo-blue.svg"
-    img_to_dark: FALSE
-    logo_to_white: FALSE
+    pagedreport::paged_windmill:
+      logo: "https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2020/08/rru-logo-blue.svg"
+      # logo: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg"
+      # front_img: "https://images.pexels.com/photos/53425/polar-bear-arctic-wildlife-snow-53425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      img_to_dark: FALSE
+      logo_to_white: FALSE
 knit: pagedown::chrome_print
 main-color: "#6cabdd"
+# main-color: "#e61a27"
 ---
 
 ```{r setup, include=FALSE}

@@ -130,3 +130,18 @@ a {
   font-family: 'IBM Plex Mono';
   background-color: white;
 }
+
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	width: 100vw;
+	max-width: 100vw;
+	margin-top: -50vw;
+	margin-bottom: -50vw;
+	height: 100vw;
+	max-height: 100vw;
+	position: relative;
+	right: 50%;
+	
+}
