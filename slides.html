@@ -5,7 +5,10 @@
     <meta charset="utf-8" />
     <script src="libs/header-attrs-2.8/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/animate.css-3.7.2/animate.xaringan.css" rel="stylesheet" />
+    <link href="libs/openMic-0.0.1/openMic.css" rel="stylesheet" />
+    <script src="libs/openMic-0.0.1/openMic.js"></script>
+    <script id="openMic-cc-options" type="application/json">{"loc":"bottom"}</script>
+    <link href="libs/animate.css-xaringan-3.7.2/animate.fade.css" rel="stylesheet" />
     <link href="libs/xaringanExtra-extra-styles-0.2.4/xaringanExtra-extra-styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
@@ -28,32 +31,32 @@ class: center, middle, inverse, title-slide
 
 
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 # A Quick Story
 
 ---
 
 background-image: url("images/rmd-pdf.png")
-class: animated fadeIn fadeOut
 
-.alt-text-bottom-right[Alt text: Default PDF Format Rendered from RMarkdown]
+&lt;span role="img" aria-label="Default PDF Format Rendered from RMarkdown"&gt;&lt;/span&gt;
+
 
 ---
 
 background-image: url("images/rmd-pdf.png")
-class: white-bg animated fadeIn fadeOut text-bottom
+class: white-bg text-bottom
 
-.alt-text-bottom-right[Alt text: Default PDF Format Rendered from RMarkdown]
+&lt;span role="img" aria-label="Default PDF Format Rendered from RMarkdown"&gt;&lt;/span&gt;
 
 ## Recognize This?
 
 ![](images/rmd-pdf.png)
 
-.alt-text-bottom-right[Alt text: Default PDF Format Rendered from RMarkdown]
+&lt;span role="img" aria-label="Default PDF Format Rendered from RMarkdown"&gt;&lt;/span&gt;
 
 ---
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## R Users Are Not Designers
 
 ---
@@ -61,173 +64,174 @@ class: white-bg animated fadeIn fadeOut
 
 background-image:url("https://media.giphy.com/media/AC1HrkBir3bGg/source.gif")
 background-size: cover
-class: animated fadeIn fadeOut text-bottom
+class: text-bottom
 
-.alt-text-bottom-right[Alt text: Person pointing to their head and saying "DUH!"]
+
+&lt;span role="img" aria-label="Person pointing to their head and saying DUH!"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/who-runs-the-world.gif")
 background-size: cover
-class: animated fadeIn fadeOut text-bottom
+class: text-bottom
 
-.alt-text-bottom-right[Alt text: Michelle Obama and friends saying "Who runs the world?"]
+&lt;span role="img" aria-label="Michelle Obama and friends saying who runs the world?"&gt;&lt;/span&gt;
+
 ---
 
 background-image: url("images/who-runs-the-world.gif")
 background-size: cover
-class: animated fadeIn fadeOut text-bottom
+class: text-bottom
 ## PDFs Run the World
 
-.alt-text-top-right[Alt text: Michelle Obama and friends saying "Who runs the world?"]
+&lt;span role="img" aria-label="Michelle Obama and friends saying who runs the world?"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("https://www.workfront.com/sites/default/files/imported/400867961-11778.jpg")
 background-size: cover
-class: animated fadeIn fadeOut text-bottom
+class: text-bottom
 ## Yeah, I'm Gonna&lt;br&gt;Need That in a PDF
 
-.alt-text-top-right[Alt text: Boss from Office Space]
+&lt;span role="img" aria-label="Boss from Office Space"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/road-split.jpg")
-class: animated fadeIn fadeOut
+class:
 ## Options to&lt;br&gt;Make PDF Reports
 
-.alt-text-bottom-right[Alt text: Road splitting in two directions]
+&lt;span role="img" aria-label="Road splitting in two directions"&gt;&lt;/span&gt;
 
 ---
 
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 background-image: url("images/rmd-pdf.png")
 ## Option #1&lt;br&gt;Default PDF Format
 
-.alt-text-bottom-right[Alt text: Default PDF Format Rendered from RMarkdown]
+&lt;span role="img" aria-label="Default PDF Format Rendered from RMarkdown"&gt;&lt;/span&gt;
 
 ---
 
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ### Please Don't
 
 ---
 
-class: animated fadeIn fadeOut white-bg
+class: white-bg
 ## Option #2&lt;br&gt;LaTeX
 
 ---
 
-class: animated fadeIn fadeOut
+class:
 background-image: url("images/latex-sucks-1.png")
 
-.alt-text-bottom-right[Alt text: Tweets of people complaining about LaTex]
+&lt;span role="img" aria-label="Tweets of people complaining about LaTex"&gt;&lt;/span&gt;
 
 ---
 
-class: animated fadeIn fadeOut
+class:
 background-image: url("images/latex-sucks-2.png")
 
-.alt-text-bottom-right[Alt text: Tweets of people complaining about LaTex]
+&lt;span role="img" aria-label="Tweets of people complaining about LaTex"&gt;&lt;/span&gt;
 
 ---
 
-class: animated fadeIn fadeOut
+class:
 background-image: url("images/latex-sucks-3.png")
 
-.alt-text-bottom-right[Alt text: Tweets of people complaining about LaTex]
+&lt;span role="img" aria-label="Tweets of people complaining about LaTex"&gt;&lt;/span&gt;
 
 ---
 
-class: animated fadeIn fadeOut
+class:
 background-image: url("images/latex-sucks-4.png")
 
-.alt-text-bottom-right[Alt text: Tweets of people complaining about LaTex]
+&lt;span role="img" aria-label="Tweets of people complaining about LaTex"&gt;&lt;/span&gt;
 
 ---
 
-class: animated fadeIn fadeOut
+class:
 background-image: url("images/latex-sucks-5.png")
 
-.alt-text-bottom-right[Alt text: Tweets of people complaining about LaTex]
+&lt;span role="img" aria-label="Tweets of people complaining about LaTex"&gt;&lt;/span&gt;
 
 
 
 ---
 
 
-class: animated fadeIn fadeOut
+class:
 background-image: url("images/graphic-designer.jpg")
 ## Option #3&lt;br&gt;Work With a Designer
 
-.alt-text-bottom-right[Alt text: Computer screens with nicely laid out reports]
+&lt;span role="img" aria-label="Computer screens with nicely laid out reports"&gt;&lt;/span&gt;
 
 ---
 
-class: animated fadeIn fadeOut right
+class: right
 background-image: url("images/thinking.jpg")
 ## Is There&lt;br&gt;Another Option?
 
-.alt-text-bottom-right[Alt text: Gorilla thinking deeply]
+&lt;span role="img" aria-label="Gorilla thinking deeply"&gt;&lt;/span&gt;
 
 
 ---
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 # Yes!
 
 ---
 
 background-image: url("images/rmd-pdf.png")
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 # How Did I Get From Here ... 
 
-.alt-text-bottom-right[Alt text: Default PDF Format Rendered from RMarkdown]
+&lt;span role="img" aria-label="Default PDF Format Rendered from RMarkdown"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/psc-sample.png")
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## ... To Here?
 
-.alt-text-bottom-right[Alt text: Sample from report on housing data in Connecticut]
+&lt;span role="img" aria-label="Sample from report on housing data in Connecticut"&gt;&lt;/span&gt;
+
 
 ---
 
 background-image: url("images/ct-towns.gif")
 background-size: cover
-class: animated fadeIn fadeOut
 
-.alt-text-bottom-right[Alt text: Animation of map of Connecticut, with all towns appearing one after the other]
 ## Client Needs 170+ Reports
 
+&lt;span role="img" aria-label="Animation of map of Connecticut, with all towns appearing one after the other"&gt;&lt;/span&gt;
 
 
 ---
 
 background-image: url("images/frustrated.jpg")
-class: white-bg animated fadeIn fadeOut text-bottom
-## Enough to Drive You Crazy
+class: white-bg text-bottom
 
-.alt-text-bottom-right[Alt text: Person holding their head in their hands]
+&lt;span role="img" aria-label="Person holding their head in their hands"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/parameterized-reporting-article.png")
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## R is Efficient ... 
 
-.alt-text-top-right[Alt text: Screenshot of article about parameterized reporting]
+&lt;span role="img" aria-label="Screenshot of article about parameterized reporting"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/beautiful-lake.jpg")
-class: animated fadeIn fadeOut text-bottom
+class: text-bottom
 ## ... But Can it Be Beautiful?
 
-.alt-text-bottom-right[Alt text: Beautiful lake with mountains surrounding it]
+&lt;span role="img" aria-label="Beautiful lake with mountains surrounding it"&gt;&lt;/span&gt;
 
 
 
@@ -235,35 +239,36 @@ class: animated fadeIn fadeOut text-bottom
 ---
 
 background-image: url("images/pagedown-resume.png")
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 # Enter `pagedown`
 
-.alt-text-bottom-right[Alt text: Screenshot of resume made with pagedown package]
+&lt;span role="img" aria-label="Screenshot of resume made with pagedown package"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/psc-sample.png")
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## Connecticut&lt;br&gt;Housing Reports
 
-.alt-text-bottom-right[Alt text: Sample from report on housing data in Connecticut]
+&lt;span role="img" aria-label="Sample from report on housing data in Connecticut"&gt;&lt;/span&gt;
 
 ---
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## R Code for the Plots
 
 ---
 
 background-image: url("images/plot-code.png")
 background-size: cover
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 
-.alt-text-bottom-right[Alt text: Sample of code used to make plot in housing data report]
+
+&lt;span role="img" aria-label="Sample of code used to make plot in housing data report"&gt;&lt;/span&gt;
 
 ---
 
-class: white-bg animated fadeIn fadeOut middle
+class: white-bg middle
 
 ## HTML and CSS&lt;br&gt;for the Layout
 
@@ -271,106 +276,110 @@ class: white-bg animated fadeIn fadeOut middle
 
 background-image: url("images/psc-layout-code.png")
 background-size: contain
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 
-.alt-text-bottom-right[Alt text: Sample of code to lay out plots in housing data report]
+&lt;span role="img" aria-label="Sample of code to lay out plots in housing data report"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/psc-layout-sample.png")
 background-size: contain
-class: white-bg animated fadeIn fadeOut text-bottom 
+class: white-bg text-bottom 
 ## The Result
 
-.alt-text-bottom-right[Alt text: Sample from housing data report with plot next to text]
+
+&lt;span role="img" aria-label="Sample from housing data report with plot next to text"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/psc-code.png")
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## Here's the Thing:&lt;br&gt;It's Complicated
 
-.alt-text-bottom-right[Alt text: Sample of code used to make housing data report]
 
 
+&lt;span role="img" aria-label="Sample of code used to make housing data report"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/class.jpg")
-class: animated fadeIn fadeOut text-bottom
+class: text-bottom
 ## I Tried Teaching Others
 
-.alt-text-top-right[Alt text: Kids in class huddled around a computer]
+&lt;span role="img" aria-label="Kids in class huddled around a computer"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/confused.jpg")
-class: animated fadeIn fadeOut text-bottom right
+class: text-bottom right
 ## It Didn't&lt;br&gt;Go Well
 
-.alt-text-bottom-right[Alt text: Person with a confused look on their face]
+&lt;span role="img" aria-label="Person with a confused look on their face"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/beautiful-lake.jpg")
-class: animated fadeIn fadeOut text-bottom
+class: text-bottom
 ## Can We Make&lt;br&gt;Something Beautiful ...
 
-.alt-text-top-right[Alt text: Beautiful lake with mountains surrounding it]
+
+
+&lt;span role="img" aria-label="Beautiful lake with mountains surrounding it"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/easy-to-use.jpg")
-class: animated fadeIn fadeOut text-bottom
+class: text-bottom
 ## ... and Easy to Use? 
 
-.alt-text-top-right[Alt text: Person standing on rock with arms outstretched]
+&lt;span role="img" aria-label="Person standing on rock with arms outstretched"&gt;&lt;/span&gt;
 
 ---
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 # Enter `pagedreport`
 
 ---
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## Windmill
 
 .right[
 ![](https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2021/01/windmill.gif)
 ]
 
-.alt-text-bottom-right[Alt text: Animation of pages from pagedreport template]
+
+&lt;span role="img" aria-label="Animation of pages from pagedreport template"&gt;&lt;/span&gt;
 
 ---
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## Grid
 
 .right[
 ![](https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2021/01/grid.gif)
 ]
 
-.alt-text-bottom-right[Alt text: Animation of pages from pagedreport template]
+&lt;span role="img" aria-label="Animation of pages from pagedreport template"&gt;&lt;/span&gt;
 
 ---
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## Hazelnuts
 
 .right[
 ![](https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2021/01/hazelnuts.gif)
 ]
 
-.alt-text-bottom-right[Alt text: Animation of pages from pagedreport template]
+&lt;span role="img" aria-label="Animation of pages from pagedreport template"&gt;&lt;/span&gt;
 
 ---
 
 background-image: url("images/hole.jpg")
-class: animated fadeIn fadeOut text-bottom
+class: text-bottom
 ## It's YAML All the Way Down
 
-.alt-text-top-right[Alt text: Deep hole with water in it]
+&lt;span role="img" aria-label="Deep hole with water in it"&gt;&lt;/span&gt;
 
 ---
 
@@ -394,53 +403,36 @@ main-color: "#6cabdd"
 ---
 ```
 
-???
-
-
-title: "Title of the report"
-subtitle: "Subtitle of the report"
-author: "Author Name"
-date: "Date"
-output: 
-  pagedreport::paged_windmill:
-    logo: "https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2020/08/rru-logo-blue.svg"
-    # logo: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg"
-    img_to_dark: FALSE
-    logo_to_white: FALSE
-knit: pagedown::chrome_print
-main-color: "#6cabdd"
-# main-color: "#e61a27"
-
-
-
 
 
 ---
 
 background-image: url("images/rmd-pdf.png")
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 # Please,&lt;br&gt;Don't Make Ugly PDFs
 
-.alt-text-bottom-right[Alt text: Default PDF Format Rendered from RMarkdown]
+&lt;span role="img" aria-label="Default PDF Format Rendered from RMarkdown"&gt;&lt;/span&gt;
 
 ---
 
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## Got HTML + CSS Skills&lt;br&gt;and Want 100% Control?&lt;br&gt;Try `pagedown`
 
 ---
 
 background-image: url("https://mk0rfortheresto0o08q.kinstacdn.com/wp-content/uploads/2021/01/windmill.gif")
 background-size: cover
-class: white-bg animated fadeIn fadeOut
+class: white-bg
 ## Want A Simple Way&lt;br&gt;to Make Beautiful&lt;br&gt;PDF Reports?&lt;br&gt;Try `pagedreport`
 
-.alt-text-bottom-right[Alt text: Animation of pages from pagedreport template]
+
+
+&lt;span role="img" aria-label="Animation of pages from pagedreport template"&gt;&lt;/span&gt;
 
 
 ---
 
-class: text-bottom white-bg animated fadeIn fadeOut
+class: text-bottom white-bg
 
 # Learn More
 
@@ -450,7 +442,7 @@ class: text-bottom white-bg animated fadeIn fadeOut
 
 ---
 
-class: white-bg animated fadeIn fadeOut middle text-bottom
+class: white-bg middle text-bottom
 
 # Questions?&lt;br&gt;david@rfortherestofus.com
 
@@ -458,7 +450,7 @@ class: white-bg animated fadeIn fadeOut middle text-bottom
 
 ![](images/dk-round.jpg)
 
-.alt-text-top-right[Alt text: Headshot of David Keyes]
+&lt;span role="img" aria-label="Headshot of David Keyes"&gt;&lt;/span&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
